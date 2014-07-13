@@ -79,6 +79,9 @@ clean:
 	rm -rf .\bin
 	@echo -e "\t\n \e[32m cleaned up.\e[39m"
 	
+test_connect:
+	$(UPLOADER) -P $(PORT) -c $(PROGRAMMER) -p$(TARGET_DUDE)
+	
 	
 print_mcu_names:
 	@echo -e "\e[32m Names for TARGET_GCC\e[39m"
